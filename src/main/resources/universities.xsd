@@ -19,6 +19,20 @@
         </xs:complexType>
     </xs:element>
 
+    <xs:element name="getAllUniversitiesRequest">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getAllUniversitiesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="university" type="tns:university" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
     <xs:complexType name="university">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
